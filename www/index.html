@@ -22,7 +22,7 @@
 					<ion-nav id="home-nav"></ion-nav>
 					<div id="home-page">
 						<ion-header>
-							<ion-toolbar>
+							<ion-toolbar color="tertiary">
 								<ion-title>Accueil</ion-title>
 							</ion-toolbar>
 						</ion-header>
@@ -38,14 +38,13 @@
 					<ion-nav id="pizzas-nav"></ion-nav>
 					<div id="pizzas-page">
 						<ion-header>
-							<ion-toolbar>
+							<ion-toolbar color="tertiary">
 								<ion-title>Liste des pizzas</ion-title>
 							</ion-toolbar>
 						</ion-header>
 						<ion-content>
-							{# Btn add pizza #}
 							<ion-fab slot="fixed" vertical="bottom" horizontal="end">
-								<ion-fab-button id="bt-create-pizza">
+								<ion-fab-button id="bt-create-pizza" color="success">
 									<ion-icon name="add"></ion-icon>
 								</ion-fab-button>
 							</ion-fab>
@@ -55,12 +54,12 @@
 				</ion-tab>
 
 				{# Menu navigation #}
-				<ion-tab-bar slot="bottom">
-					<ion-tab-button tab="home">
+				<ion-tab-bar slot="bottom" color="tertiary">
+					<ion-tab-button tab="home" >
 						<ion-icon name="home"></ion-icon>
 						Accueil
 					</ion-tab-button>
-					<ion-tab-button tab="pizzas">
+					<ion-tab-button tab="pizzas" >
 						<ion-icon name="list"></ion-icon>
 						La carte
 					</ion-tab-button>
@@ -71,6 +70,6 @@
 		</ion-app>
 
 		<script src="cordova.js"></script>
-		<script src="js/index.js"></script>
+		<script type="module" src="js/index.js"></script>
 	</body>
 </html>

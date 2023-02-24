@@ -17,33 +17,35 @@
  * under the License.
  */
 
- body {
-    display: flex;
-    flex-flow: column nowrap;
-    align-items: center;
-    padding: 30px;
-  }
-    body > * {
-      padding-bottom: 5px;
-    }
-  
-  .form-add-pizza {
-    display: flex;
-    flex-flow: column nowrap;
-  }
-    .form-add-pizza > * {
-      margin-bottom: 10px;
-    }
-    .form-add-pizza [type=submit] {
-      border: 1px solid white;
-      padding: 8px;
-    }
-  
-  .pizzas {
-    min-width: 350px;
-  }
-    .pizza > p:first-of-type {
-      font-size: 1.3rem;
-      font-weight: bold;
-      margin-bottom: -15px;
-    }
+ main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+
+.alert-button-inner {
+  color: black;
+}
+
+/* Style du changement de base */
+
+.is-cream .alert-button-inner {
+  background-color: wheat;
+  border: 2px solid wheat;
+  border-radius: 40%;
+}
+
+.is-tomato .alert-button-inner {
+  background-color: tomato;
+  border: 2px solid tomato;
+  border-radius: 40%;
+}
+
+ion-card.tomato-base {
+  --background: tomato;
+}
+
+ion-card.cream-base {
+  --background: wheat;
+}
