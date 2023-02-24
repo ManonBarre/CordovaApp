@@ -1,0 +1,21 @@
+#main-content {
+    display: flex;
+    flex-flow: row  nowrap;
+}
+
+#content {
+    width: 80%;
+    text-align: center;
+}
+
+#btn-menu {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 20%;
+    padding: 2px;
+
+}
+
+#btn-menu ion-button {
+    width: 100%;
+}
